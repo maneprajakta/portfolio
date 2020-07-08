@@ -177,8 +177,8 @@ font-family: 'Kanit', sans-serif;
     padding-right: 15%;
 }
 .footer{
-    background-color: tomato;
-    opacity: 0.4;
+    background-color: black;
+    opacity: 0.7;
     font-weight: bolder;
     color: wheat;
 }
