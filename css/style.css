@@ -187,9 +187,9 @@ font-family: 'Kanit', sans-serif;
 @media only screen and (max-width: 768px) {
 
 .icon{
-    width: 60px;
-    height: 60px;
-   
+    width: 45px;
+    height: 45px;
+    padding-left: 1%;
 }
 
 .connect{
@@ -219,8 +219,8 @@ font-family: 'Kanit', sans-serif;
 }
 
 .skill-icon{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     padding-left: 2%;
 }
 
@@ -258,7 +258,9 @@ font-family: 'Kanit', sans-serif;
     font-size: 120%;
     font-weight: bold;
 }
-
+.tsf{
+    font-size: 13px;
+}
 
 }
 
