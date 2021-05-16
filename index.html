@@ -21,12 +21,16 @@
 </head>
 
 <body>
+    <!------- Preloader ---------------->
+    <div class="preloader">
+        <div id="loader"></div>
+    </div>
     <!-- nav bar --------------------------------->
     <div id="topheader">
         <nav class="navbar stroke navbar-expand-lg fixed-top">
             <a class="navbar-brand" href="index.html">Prajakta Mane</a>
             <button class="navbar-toggler  navbar-toggler-right" data-toggle="collapse" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        <span class="navbar-toggler-icon"><i class="fa fa-bars toggle_icon" aria-hidden="true"></i></span>
       </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav nav-head ml-auto text-center">
@@ -71,7 +75,7 @@
                         </div>
                         <div class="connect card-text">
                             <div>
-                                <a href="https://github.com/maneprajakta" target="_blank"><img class="icon " src="images/github.svg"></a>
+                                <a href="https://github.com/maneprajakta" target="_blank"><img class="icon github" src="images/github.svg"></a>
                             </div>
                             <div>
                                 <a href="https://www.linkedin.com/in/maneprajakta/" target="_blank"><img class="icon" src="images/linkedin.svg"></a>
@@ -121,7 +125,7 @@
         <br><br><br>
         <div class="card container skills-card" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="600">
             <br>
-            <h1 class="card-text heading">Technical Skills</h1>
+            <h1 class="card-title heading">Technical Skills</h1>
             <div class="line" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="700">
                 <div>
                     <div class="card-text skill-heading" style="padding-left: 2%;">Machine Leaining</div>
@@ -378,6 +382,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+    var loader = document.querySelector("#loader")
+    window.addEventListener("load", vanish);
+    function vanish() {
+    loader.style.display='none';
+    }
+    </script>
     <script>
         $(document).on('click', function() {
             $('.collapse').collapse('hide');
