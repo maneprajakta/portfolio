@@ -26,6 +26,7 @@
         <div id="loader"></div>
     </div>
     <!-- nav bar --------------------------------->
+<div id="begin_body" style="display:none;">
     <div id="topheader">
         <nav class="navbar stroke navbar-expand-lg fixed-top">
             <a class="navbar-brand" href="index.html">Prajakta Mane</a>
@@ -316,10 +317,32 @@
             </div>
         </div>
     </section>
+</div>
     <!-- ./Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+    var loader = document.querySelector(".preloader")
+    window.addEventListener("load", vanish);
+    function vanish() {
+    loader.style.display='none';
+    document.getElementById("begin_body").style.display = "block";
+    }
+    </script>
+    <script>
+        $(document).on('click', function() {
+            $('.collapse').collapse('hide');
+        })
+    </script>
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+        <script type="text/javascript">
         // List of sentences
         var _CONTENT = ["Data Science Enthusiast", "Machine Learning Enthusiast", "Django Enthusiast", "Coder"];
 
@@ -376,28 +399,6 @@
 
         // Start the typing effect on load
         _INTERVAL_VAL = setInterval(Type, 100);
-    </script>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script>
-    var loader = document.querySelector(".preloader")
-    window.addEventListener("load", vanish);
-    function vanish() {
-    loader.style.display='none';
-    }
-    </script>
-    <script>
-        $(document).on('click', function() {
-            $('.collapse').collapse('hide');
-        })
-    </script>
-    <!-- aos script -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
     </script>
 </body>
 
