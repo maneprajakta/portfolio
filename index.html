@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Prajakta Mane</title>
   </head>
   <body>
     <!-- nav bar --------------------------------->
     <div id="topheader">
     <nav class="navbar stroke navbar-expand-lg fixed-top">
-        <a class="navbar-brand btn btn-raised" href="index.html">Prajakta Mane</a>
+        <a class="navbar-brand" href="index.html">Prajakta Mane</a>
         <button class="navbar-toggler  navbar-toggler-right" data-toggle="collapse" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa fa-list" aria-hidden="true"></i></span>
         </button>
@@ -28,22 +30,25 @@
           <ul class="navbar-nav nav-head ml-auto">
 
                 <li class="nav-item active ">
-                <a class="nav-link ac"   href="#aboutme"  >About Me<span class="sr-only">(current)</span></a>
+                <a class="nav-link shift_nav" href="#aboutme"  >About Me<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link "   href="#skills">Skills</a>
+                    <a class="nav-link shift_nav" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  "   href="#blogs">Blogs</a>
+                  <a class="nav-link shift_nav"href="#achivements">Achivements</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link shift_nav"href="#blogs">Blogs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="./html/work.html">My Work</a>
+                  <a class="nav-link shift_nav" href="./html/work.html">My Work</a>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./html/certification.html">Certifications</a>
+                    <a class="nav-link shift_nav" href="./html/experience.html">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="./html/education.html">Education</a>
+                    <a class="nav-link shift_nav" href="./html/education.html">Education</a>
                 </li>
           </ul>
         </div>
@@ -52,7 +57,7 @@
 
      <!------------------about me ---------------------------------->
 
-    <section id="aboutme">
+    <section id="aboutme" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="600">
      
     <br><br>
     <div class="container-fluid about-me-container">
@@ -60,28 +65,29 @@
         <div class="row no-gutters">
           <div class="col-md-4">
             <div class="img-me">
-            <img src="images/pp.jpeg" class="card-img" alt="...">
+            <img src="images/maneprajakta.jpeg" class="card-img me-image" alt="...">
             </div>
              <div class="connect card-text">
                             <div>
-                            <a href="https://github.com/maneprajakta"><img class="icon " src="images/github.png"></a>
+                            <a href="https://github.com/maneprajakta" target="_blank"><img class="icon " src="images/github.svg"></a>
                             </div>
                             <div>
-                            <a href="https://www.linkedin.com/in/maneprajakta/"><img class="icon" src="images/linkedin.svg"></a>
+                            <a href="https://www.linkedin.com/in/maneprajakta/" target="_blank"><img class="icon" src="images/linkedin.svg"></a>
                             </div>
                             <div>
-                            <a href="mailto:prajakta916mane1@gmail.com"><img class="icon" src="images/gmail.svg"></a>
+                            <a href="mailto:prajakta916mane1@gmail.com" target="_blank"><img class="icon" src="images/gmail.svg"></a>
                             </div>
                             <div>
-                            <a href="https://twitter.com/PRAJAKT44491790"><img class="icon" src="images/twitter.svg"></a>
+                            <a href="https://stackoverflow.com/users/12214179/prajakta-mane" target="_blank"><img class="icon " src="images/stack.png"></a>
                             </div>
                             <div>
-                            <a href="https://medium.com/@prajakta916mane1"><img class="icon" src="images/medium1.svg"></a>
+                            <a href="https://medium.com/@prajakta916mane1" target="_blank"><img class="icon" src="images/medium1.svg"></a>
                            </div>
                            <div>
-                            <a href="https://www.hackerrank.com/prajakta916mane1"><img class="icon" src="images/hackerrank.svg"></a>
+                            <a href="https://www.hackerrank.com/prajakta916mane1" target="_blank"><img class="icon" src="images/hackerrank.svg"></a>
                            </div>
               </div>
+              
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -95,14 +101,15 @@
                         <div class="card-text aboutme-text">
                             <p class="card-text">A third-year undergrad at D.Y.Patil College Of Engineering, Pune pursuing Bachelor's Degree in Computer Engineering.</p>
                             <p class="card-text">
-My interest in data which has made me land up in the field of deep learning started when I was doing a capstone project where we were asked to make calls to API and render the retrieved data.
-I was surprised how a single API can be used to render so much of data.
-From then I had done web scraping converted the data to data frame through pandas. 
-I have spend a lot of time learning the machine learning algorithms, getting everything out of data,Starting from data cleaning to final deployment of model .I am a keen learner having great grasping power. It perks me how we solve problems make predictions in simple words we make machines learn.
-<br>Apart from this Competitive Coding is where I can be found. I have also done web development  and worked on frameworks like Django for Backend.I believe in sharing knowledge and growing together.
-Outside technology world I can be found reading some fiction books.
-</p>
-                        </div> 
+                            I am a data science enthusiast curretnly exploring NLP.<br>
+                            I spend a lot of time exploring and learning new technologies and contibuting to open soure.<br>
+                            Also I am a 2 star coder at codechef and write tech articles on Medium & GfG.<br> 
+                            Apart from tech world I like reading novels and visiting new places.
+                            </p>
+                          <div class="resume_btn">
+                           <a href="" class="btn" target="_blank"><i class="fa fa-file" aria-hidden="true"></i> View Resume</a>
+                          </div>
+                          </div> 
           </div>
         </div>
       </div>
@@ -110,118 +117,147 @@ Outside technology world I can be found reading some fiction books.
   </div>
 </section>
     <!------------------------------------------------------------skills  --------------------------------------------------------->
-<section id="skills">
+<section id="skills"> 
   <br><br><br>
- <div class = "card container skills-card">
+ <div class = "card container skills-card" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="600">
   <br>
   <h1 class="card-text heading">Technical Skills</h1>
-   <div class="line">
+   <div class="line" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="700">
      <div>
-     <div class="card-text skill-heading">Machine Leaining</div>
-     <img class="skill-icon" src="images/robot.png">
+     <div class="card-text skill-heading" style="padding-left: 2%;">Machine Leaining</div>
     </div>
     <div>
-     <div class="card-text skill-heading">Deep Learning</div>
-     <img  class="skill-icon" src="images/deep-learning.svg">
+     <div class="card-text skill-heading" style="padding-left: 6%;">Deep Learning</div>
     </div>
     <div>
-     <div class="card-text skill-heading">Data Analysis</div>
-     <img class="skill-icon" src="images/report.svg">
+     <div class="card-text skill-heading" style="padding-left: 7%;">Data Analysis</div>
     </div>
    </div>
-   <div class="line">
-    <div>
-    <div class="card-text skill-heading">HTML</div>
-    <img class="skill-icon" src="images/html-5.svg">
+   <div class="line" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="700">
+    <div class="text-center">
+      <img class="skill-icon" src="./images/keras.svg">
+      <div class="card-text text-center skill-heading" style="color: #D00000;">Keras</div>
     </div>
-    <div>
-    <div class="card-text skill-heading">CSS</div>
-    <img class="skill-icon" src="images/css.svg">
+    <div class="text-center mx-3">
+      <img class="skill-icon" src="./images/scikit-learn.svg">
+      <div class="card-text skill-heading" style="color: #F7931E;">&nbsp; Sklearn</div>
     </div>
-    <div>
-    <div class="card-text skill-heading">Java Script</div>
-    <img class="skill-icon" src="images/javascript.svg">
+    <div class="text-center">
+      <img class="skill-icon" src="./images/tensorflow.svg">
+      <div class="card-text skill-heading" style="color: #FF6F00;">&nbsp; TensorFlow</div>
+    </div>
    </div>
-   <div>
-    <div class="card-text skill-heading">BootStrap</div>
-    <img class="skill-icon" src="images/icons8-bootstrap.svg">
+   <div class="line" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="700">
+    <div class="text-center">
+      <img class="skill-icon" src="./images/html5.svg">
+    <div class="card-text skill-heading" style="color: #E34F26;">&nbsp;HTML</div>
+    </div>
+    <div class="text-center ml-4">
+      <img class="skill-icon" src="./images/css3.svg">
+    <div class="card-text skill-heading" style="color: #1572B6;">&nbsp;CSS</div>
+    </div>
+    <div class="text-center ml-4">
+      <img class="skill-icon" src="./images/javascript.svg">
+    <div class="card-text skill-heading" style="color: #F7DF1E;">&nbsp;Java Script</div>
    </div>
-  </div>
-  <div class="line lang">
-    <div>
-    <div class="card-text skill-heading">C++</div>
-    <img class="skill-icon" src="images/c.svg">
-  </div>
-  <div>
-    <div class="card-text skill-heading">Python</div>
-    <img class="skill-icon" src="images/python.svg">
-  </div>
-  <div class="cen">
-    <div class="card-text skill-heading">Java</div>
-    <img class="skill-icon" src="images/java.svg">
-  </div>
-  <div>
-    <div class="card-text skill-heading">MySQL</div>
-    <img class="skill-icon" src="images/mysql.svg">
-  </div>
-  <div>
-    <div class="card-text tsf skill-heading">TensorFlow</div>
-    <img class="skill-icon" src="images/tensorflow.svg">
+   <div class="text-center ml-4">
+    <img class="skill-icon" src="./images/cplusplus.svg">
+    <div class="card-text skill-heading" style="color:#00599C;">&nbsp;C++</div>
+   </div>
+   <div class="text-center ml-4">
+    <img class="skill-icon" src="./images/python.svg">
+    <div class="card-text skill-heading" style="color:#3776AB;">&nbsp;Python</div>
   </div>
   </div>
-  <div class="line" >
-    <div>
-    <div class="card-text skill-heading">Django</div>
-    <img class="skill-icon" src="images/icons8-django.svg">
+  <div class="line" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="700">
+    <div class="text-center ">
+    <img class="skill-icon" src="./images/bootstrap.svg">
+    <div class="card-text skill-heading" style="color: #7952B3;">Bootstrap</div>
+    </div>
+  <div class="text-center ml-4">
+    <img class="skill-icon" src="./images/django.svg">
+    <div class="card-text skill-heading" style="color: #092E20;">&nbsp;Django</div>
   </div>
-  <div>
-    <div class="card-text skill-heading">Flask</div>
-    <img class="skill-icon" src="images/pocoo_flask-ar21.svg">
+  <div class="text-center ml-4"> 
+    <img class="skill-icon" src="./images/mysql.svg">
+    <div class="card-text skill-heading" style="color: #4479A1;">&nbsp;MySQL</div>
   </div>
-  <div>
-    <div class="card-text skill-heading">Django-Rest</div>
-    <img class="skill-icon-rest" src="images/rest.png">
+  <div class="text-center ml-4">
+    <img class="skill-icon" src="./images/sqlite.svg">
+    <div class="card-text skill-heading" style="color: #003B57;">&nbsp;SQL</div>
   </div>
- </div>
+  </div>
+ <div class="line" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="700">
+  <div class="text-center ">
+    <img class="skill-icon" src="./images/git.svg">
+    <div class="card-text skill-heading" style="color:#F05032;">Git</div>
+  </div>
+<div class="text-center ml-4">
+  <img class="skill-icon" src="./images/github.svg">
+  <div class="card-text skill-heading" style="color: ;">&nbsp;GitHub</div>
+</div>
+<div class="text-center ml-4">
+  <img class="skill-icon" src="./images/heroku.svg">
+  <div class="card-text skill-heading" style="color: #430098;">&nbsp;Heroku</div>
+</div>
+</div>
 </section>
 
+<!----------------------------------- Achivements -------------------------------->
+<section id="achivements">
+<br><br><br>
+<div class="card blog-card container" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600">
+  <h1 class="card-title heading">Achivements</h1>
+<table class="decor-table">
+  <tr><td><i class="fa fa-angle-right" aria-hidden="true"></i> First runner up in PISB Ideathon 2020 (PICT IEEE Student Branch).</td></tr>
+  <tr><td><i class="fa fa-angle-right" aria-hidden="true"></i> 6 star Problem Solver on Hackerrank.</td></tr>
+  <tr><td><i class="fa fa-angle-right" aria-hidden="true"></i> 2 star Coder Codechef.</td></tr>
+  <tr><td><i class="fa fa-angle-right" aria-hidden="true"></i> Secured Global rank of 8822th in Google Hash Code 2020.</td></tr>
+  <tr><td><i class="fa fa-angle-right" aria-hidden="true"></i> Secured Global rank of 4388th in Google Kickstart round C.</td></tr>
+  <tr><td><i class="fa fa-angle-right" aria-hidden="true"></i> Conducted webinar on Git & GitHub & ML and Java.</td></tr>
+</table>
+<div>
+</section>
 
-
-       <!--------------  blogs ----------------------------------------------->
-
-       <section id="blogs">
-         <br>
-        <div class="card blog-card container">
+<!------------------------------------  Blogs ------------------------------------->
+  <section id="blogs">
+         <br><br><br>
+        <div class="card blog-card container" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="600">
           <h1 class="card-title heading">Blogs</h1>
-          <p class="card-text text-center blog-text">Technical Content Writing .Wrote on few topics which i found to be shared views on while learning.</p>
+          <h5 class="text-center general-text">Technical Content Writing .Wrote on few topics which i found to be shared views on while learning.</h5>
        <div class="blog-begin ">
         <div class="row container">
         <div class=" work-p  col-lg-4 col-sm-12 col-md-4">
         <div class="card" >
-          <a href="https://medium.com/devclub-dypcoe/searching-in-django-8384c1c65b41"><img class="card-img" src="images/mediumarticle.jpeg" alt="Card image cap"></a>
+          <img class="card-img" src="images/mediumarticle.jpeg" alt="Card image cap">
           <div class="card-body">
             <p class="card-title" style="font-weight: bold;">How Searching is Done in Django ?</p>
             <p class="card-text blog-text">It explains how to perform seacrching in django with the help of a blog app.Searching is done on database</p>
+            <br><br>
           </div>
+          <a href="https://medium.com/devclub-dypcoe/searching-in-django-8384c1c65b41" class="btn btn-blog" target="_blank">View Blog</a>
         </div>
         </div>
         <div class=" work-p  col-lg-4 col-sm-12  col-md-4">
         <div class="card">
-          <a href="https://www.geeksforgeeks.org/stdless_equal-in-c-with-examples/"><img class="card-img" src="images/gfg.png" alt="Card image cap"></a>
+          <img class="card-img" src="images/gfg.png" alt="Card image cap">
           <div class="card-body">
             <p class="card-title"  style="font-weight: bold;">std::less_equal in C++ with Examples</p>
             <p class="card-text blog-text">It Explaines how to use std::less_equal a function under functional.h libraray in c++ with Example.</p>
             <p></p>
           </div>
+          <a href="https://www.geeksforgeeks.org/stdless_equal-in-c-with-examples/" class="btn btn-blog" target="_blank">View Blog</a>
         </div>
         </div>
         <div class=" work-p  col-lg-4  col-sm-12  col-md-4">
             <div class="card">
-              <a href="https://www.geeksforgeeks.org/difference-between-numpy-dot-and-operation-in-python/"><img class="card-img" src="images/gfg.png" alt="Card image cap"></a>
+              <img class="card-img" src="images/gfg.png" alt="Card image cap"></a>
               <div class="card-body">
                 <p class="card-title"  style="font-weight: bold;">Difference between NumPy.dot() and ‘*’ operation in Python</p>
                 <p class="card-text blog-text">An Explanation of how .dot() and * work on an Numpy array in Python with Example.</p>
+              <br>
               </div>
+              <a href="https://www.geeksforgeeks.org/difference-between-numpy-dot-and-operation-in-python/" class="btn btn-blog" target="_blank">View Blog</a>
             </div>
         </div>
        </div>
@@ -266,13 +302,6 @@ Outside technology world I can be found reading some fiction books.
 
      <footer class="footer">
         <p class="text-center footer-company-name">Made By <strong>prajaktamane</strong> a Muggle on Earth .💙 &copy; 2020</p>
-        <div class="f-icons">
-        <a href="mailto:prajakta916mane1@gmail.com"><i class="fa fa-envelope fa-2x" style="color:#00cc6a"></i></a>
-        <a href="https://twitter.com/PRAJAKT44491790"><i class="fa fa-twitter fa-2x " style="color:#00cc6a"></i></a>
-        <a href="https://www.linkedin.com/in/maneprajakta/"><i class="fa fa-linkedin fa-2x"  style="color:#00cc6a"></i></a>
-        <a href="https://github.com/maneprajakta"><i class="fa fa-github fa-2x" style="color:#00cc6a"></i></a>
-        <a href="https://medium.com/@prajakta916mane1"><i class="fa fa-medium fa-2x" style="color:#00cc6a"></i></a>
-        </div>
       </footer>
 
     <!-- Optional JavaScript -->
@@ -335,15 +364,7 @@ Outside technology world I can be found reading some fiction books.
         
         // Start the typing effect on load
         _INTERVAL_VAL = setInterval(Type, 100);
-
-
-
-    
-
-
-
-        
-        </script>   
+      </script>   
        
       
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -354,5 +375,10 @@ Outside technology world I can be found reading some fiction books.
         $('.collapse').collapse('hide');
     })
         </script> 
+    <!-- aos script -->    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

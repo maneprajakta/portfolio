@@ -6,107 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Prajakta Mane !</title>
+    <!-- scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Prajakta Mane</title>
   </head>
   <body>
     <!-- nav bar --------------------------------->
-
     <div id="topheader">
-      <nav class="navbar stroke navbar-expand-lg fixed-top">
-          <a class="navbar-brand btn btn-raised" href="../index.html">Prajakta Mane</a>
-          <button class="navbar-toggler collapsed navbar-toggler-right " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fa fa-list" aria-hidden="true"></i></span>
-          </button>
-        
-        
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav nav-head ml-auto">
-  
-                  <li class="nav-item active ">
-                  <a class="nav-link"  href="../index.html#aboutme" >About Me<span class="sr-only">(current)</span></a>
+    <nav class="navbar stroke navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="../index.html">Prajakta Mane</a>
+        <button class="navbar-toggler  navbar-toggler-right" data-toggle="collapse" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa fa-list" aria-hidden="true"></i></span>
+        </button>
+      
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav nav-head ml-auto">
+
+                <li class="nav-item active ">
+                <a class="nav-link shift_nav" href="../index.html#aboutme"  >About Me<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link shift_nav" href="../index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link shift_nav"href="../index.html#achivements">Achivements</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link shift_nav"href="../index.html#blogs">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link shift_nav" href="work.html">My Work</a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link " href="../index.html#skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link  " href="../index.html#blogs">Blogs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="work.html">My Work</a>
-                    </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="certification.html">Certifications</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link " href="education.html">Education</a>
-                  </li>
-            </ul>
-          </div>
+                <li class="nav-item">
+                    <a class="nav-link shift_nav" href="experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link shift_nav" href="education.html">Education</a>
+                </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+
 
      <!------------------works ---------------------------------->
      <br><br><br>
      <h3 class="text-center heading">Some of My Work Which I would Like to Share .</h3>
      <h4 class="text-center general-text">All of them plus some miscellaneous works are on github.You can visit there.</h4>
      <div class="work-begin">
-      <div class="row container-fluid work-conatiner">
-        <div class="work-p  col-lg-6  col-sm-12  col-md-12">
-      <div class="card" ><br>
-        <h2 class="card-title">Recognise Numbers</h2>
-        <img class="card-img work-img" src="../images/mnist.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text general-text">A web app which recognise the number drawn by user on screen.The aim was to make a convolution neural network to recognise handwritten digits by training the model on MNIST dataset available in keras.Learned to use cnn and improving accuracy of model over validation dataset.</p>
-          <p class="card-text general-text">Skills Used : Keras ,Tensorflow.js ,(html + css + javascript),github pages</p>
+      <div class="row container-fluid">
+      <div class="col-lg-4  col-sm-12  col-md-12">
+      <div class="card" >
+        <img class="card-img" src="../images/kitabe.png" alt="kitabe image cover">
+        <div class="card-body"><br>
+          <h5 class="card-heading">Kitabe</h5>
+          <p class="card-text general-text">A Book Recommendation System trained on Goodreads book dataset.<br>
+           A user simply after signup logins and rate some book based on rated books recommendations are given.Also user can save a book for later.</p>
+          <p class="card-text general-text">Tech Stack : Keras, Tensorflow, Django, Html, CSS, Javascript, Bootstrap, Heroku, Ajax</p>
+           <a href="https://kitabe-app.herokuapp.com/" class="btn btn_work" target="_blank">View Project</a>
         </div>
       </div>
       </div>
-      <div class="col-lg-6  col-sm-12  col-md-12">
+      <div class="col-lg-4  col-sm-12  col-md-12">
       <div class="card"><br>
-        <h2 class="card-title">Image Classification</h2>
-        <img class="card-img work-img cat-img" src="../images/cat.gif" alt="Card image cap">
+        <img class="card-img" src="../images/neuroly.png" alt="neuroly image cover">
         <div class="card-body">
-          <p class="card-text general-text">Did binary and multiclass classification of images using dataset from different resources.It basically includes Happy or Sad emoji ,Cat or Dog,Fashion Mnist image classification.New thing which I learned was applaying Callbacks and using Tensorflow ImageDataGenerator Class.How agumentation of images helps in better validation results.</p>
-          <p class="card-text general-text">Skills Used : Tensorflow </p>
+          <h5 class="card-heading">Neuroly</h5>
+          <p class="card-text general-text">Health Care Portal.<br>
+A Platform to Connect Doctors, Patients and Hospitals with each other.<br>
+A Patient can search a doctor schedule appointment do payment for same.A docotr can accept and reject appointment also attach prescription.</p>
+          <p class="card-text general-text">Tech Stack : Djnago, SQL db, Html, CSS, Javascript, Bootstrap</p>
+          <a href="neuroly123.pythonanywhere.com" class="btn btn_work" target="_blank">View Project</a>
         </div>
       </div>
       </div>
-     </div>
-     <div class="row container-fluid">
-        <div class="work-p  col-lg-6  col-sm-12  col-md-12">
-      <div class="card" ><br>
-        <h2 class="card-title">Iris Visualisation</h2>
-        <img class="card-img work-img iris-img" src="../images/iris.jpg" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text general-text">It's a learning based project done by me while learning data Visulisation.Learned a Lot from this one.The project includes complete Visulisation of iris dataset.They key thing to note after visulisation of dataset was that The dataset contain two clusters with complete sepration ,
-            Iris setosa ,Iris virginica and Iris versicolor always are together .So,based on visulisation it was clear which machine leaning algorithm can be used for predicting the type of irirs species based on data provided.</p>
-            <p class="card-text general-text">Skills Used: Python library Pandas , Matplotlib and Seaborn .</p>
-          </div>
-      </div>
-      </div>
-      <div class="col-lg-6  col-sm-12  col-md-12">
+      <div class="col-lg-4  col-sm-12  col-md-12">
       <div class="card"><br>
-        <h2 class="card-title">Dataframe Making</h2>
-        <img class="card-img work-img scrap-img" src="../images/web-scraping.png" alt="Card image cap">
+        <img class="card-img" src="../images/query.png" alt="query image cover">
         <div class="card-body">
-          <p class="card-text general-text">We always don't get the data we want. Sometimes we need to get the data on our own. We can either use API or extract data from webpages using a technique called web scraping to retrieve data.Did Web Scrapping of a racing site retrived data manipulated it and converted it into a dataframe so that it can used in future. </p>
-          <p class="card-text general-text">Skills Used : Python's BeautifulSoup and Pandas library.</p>
+          <h5 class="card-heading">Querylizer</h5>
+          <p class="card-text general-text">An Online Platform where you simply draw node diagram of table that you want to create and in output you would get MySQL code for table creation.</p>
+          <p class="card-text general-text">Tech Stack : ReactJS, Html, CSS, Django, React-Bootstrap. </p>
+          <a href="querylizer.vercel.app" class="btn query_btn btn_work" target="_blank">View Project</a>
         </div>
       </div>
       </div>
-     </div>
+     </div> 
+    <!----------second row -------------------->
+    <div class="row container-fluid ml-auto">
+      <div class="col-lg-6 col-sm-12  col-md-12 row_work_aces">
+      <div class="card" >
+        <img class="card-img aces_img" src="../images/aces.png" alt="aces image cover">
+        <div class="card-body">
+          <h5 class="card-heading aces_head">ACES Official Website</h5>
+          <p class="card-text general-text">Official website of Association of Computer Engineering Students (ACES)
+at Dr. D. Y. Patil Pratishthan's, D. Y. Patil College of Engineering, Akurdi (Department Computer Engineering)</p>
+          <p class="card-text general-text">Skills Used : Html, CSS, Javascript, Firebase</p>
+          <a href="https://aces-dypcoeakurdi.web.app/" class="btn aces_btn" target="_blank">View Project</a>
+        </div>
       </div>
-      
+      </div>
+      <div class="col-lg-6 col-sm-12  col-md-12 row_work_mnist">
+      <div class="card"><br>
+        <img class="card-img" src="../images/mnist.png" alt="digit recognisiton image cover">
+        <div class="card-body">
+          <h5 class="card-heading">Digit Recognisiton Webapp</h5>
+          <p class="card-text general-text">A web app which recognise the number drawn by user on screen.The aim was to make a CNN to recognise handwritten digits by training the model on MNIST dataset available in keras.</p>
+          <p class="card-text general-text">Skills Used : Keras ,Tensorflow.js ,Html, CSS, Javascript,GitHub pages.</p>
+         <a href="https://maneprajakta.github.io/Digit_Recognition_Web_App/" class="btn mnist_btn" target="_blank">View Project</a>
+        </div>
+      </div>
+      </div>
+     </div>  
     </div>
-
-
-
-
 
 
 
