@@ -13,7 +13,7 @@ body {
 }
 
 
-/*-------------------------- navbar----------------------- d291bc ad6989 -*/
+/*-------------------------- navbar------------------------*/
 
 .navbar {
     background-color: #561f55;
@@ -624,8 +624,8 @@ nav.stroke ul li a:hover:after {
     height: 150px;
     margin: -75px 0 0 -75px;
     border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #9370DB;
+    border: 5px solid transparent;
+    border-top-color: #561F55;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -638,8 +638,8 @@ nav.stroke ul li a:hover:after {
     right: 5px;
     bottom: 5px;
     border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #BA55D3;
+    border: 5px solid transparent;
+    border-top-color: #8B2F97;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -652,8 +652,8 @@ nav.stroke ul li a:hover:after {
     right: 15px;
     bottom: 15px;
     border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #FF00FF;
+    border: 5px solid transparent;
+    border-top-color: #CF56A1;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
