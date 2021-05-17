@@ -106,14 +106,8 @@
         .img-me {
             height: auto;
             max-width: 100%;
-            padding-top: 5%;
-            padding-bottom: 5%;
-            padding-left: 3%;
             filter: grayscale(90%);
-        }
-        
-        .me-image {
-            box-shadow: 10px 10px 5px #ccc;
+            box-shadow: 10px 10px 5px #ccc !important;
         }
         
         .btn {
@@ -146,7 +140,7 @@
             display: inline-flex;
             align-items: center;
             padding-left: 15%;
-            margin-top: -6%;
+            margin-top: 2%;
             padding-bottom: 2%;
         }
         
@@ -409,13 +403,14 @@
                 background-repeat: no-repeat;
             }
             .resume_btn {
-                margin-left: 25%;
+                margin-left: 29%;
             }
             #skills {
                 align-items: center;
                 object-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+                background-image: none;
             }
             .skill-heading {
                 font-size: 80%;
