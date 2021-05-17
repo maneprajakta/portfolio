@@ -1,714 +1,677 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: #d8b9c3;
-    font-family: 'Nunito', sans-serif;
-}
-
-html,
-body {
-    overflow-x: hidden;
-}
-
-
-/*-------------------------- navbar------------------------*/
-
-.navbar {
-    background-color: #561f55;
-}
-
-.shift_nav {
-    margin-right: -12px;
-}
-
-.navbar-toggler {
-    border-color: black;
-    background-color: white;
-}
-
-.navbar-brand {
-    font-weight: bolder;
-    color: white;
-}
-
-nav ul li a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0 10px;
-}
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-    transition: all .5s;
-}
-
-nav ul li a:hover {
-    color: white;
-}
-
-nav.stroke ul li a,
-nav.fill ul li a {
-    position: relative;
-}
-
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: white;
-    height: 3px;
-}
-
-nav.stroke ul li a:hover:after {
-    width: 100%;
-}
-
-.navbar-toggler-icon {
-    border-color: darkblue;
-    padding-top: 10%;
-    align-content: center;
-}
-
-.navbar-brand:hover {
-    color: white;
-    text-shadow: 2px 2px 4px white;
-}
-
-
-/*-------------------------- aboutme------------------------*/
-
-.heading {
-    font-family: 'Kanit', sans-serif;
-}
-
-.card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-}
-
-.card {
-    padding: 0 auto;
-}
-
-.card-title {
-    text-align: center;
-}
-
-.img-me {
-    height: auto;
-    max-width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 3%;
-    filter: grayscale(90%);
-}
-
-.me-image {
-    box-shadow: 10px 10px 5px #ccc;
-}
-
-.btn {
-    cursor: pointer;
-    border: 1px solid black;
-    background-color: transparent;
-}
-
-.btn:hover {
-    background-color: black;
-    color: white;
-    text-shadow: 2px 2px 4px white;
-}
-
-.resume_btn {
-    margin-left: 40%;
-    margin-top: 5%;
-}
-
-.card-body {
-    margin-right: 2%;
-    text-align: justify;
-}
-
-.container-fluid {
-    padding: 2% 5%;
-}
-
-.connect {
-    display: inline-flex;
-    align-items: center;
-    padding-left: 15%;
-    margin-top: -6%;
-    padding-bottom: 2%;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-}
-
-.icon:hover {
-    transform: scale(1.1) rotate(360deg);
-}
-
-#text {
-    display: inline-block;
-    color: #561f55;
-    font-family: 'Source Code Pro', monospace;
-    border-right: 3px solid #561f55;
-    font-size: large;
-}
-
-#container-script {
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    font-size: large;
-}
-
-.about-me-container {
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.aboutme-card {
-    background-color: rgba(255, 255, 255, 0.7);
-    font-weight: bold;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
-}
-
-
-/*-------------------------- skills section------------------------*/
-
-#skills {
-    align-items: center;
-    object-position: center;
-    background: repeat 2;
-    background-size: 100%;
-}
-
-.skills-card {
-    align-items: center;
-    object-position: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.line {
-    display: inline-flex;
-    padding-bottom: 2%;
-    padding-top: 1%;
-}
-
-.skill-heading {
-    text-align: center;
-    font-weight: 900;
-}
-
-.skill-icon {
-    width: 50px;
-    height: 50px;
-}
-
-.skill-icon:hover {
-    transform: scale(1.1) rotate(360deg);
-}
-
-
-/*----------------------  Achivement Section --------------------------*/
-
-.decor-table {
-    margin: 0 auto;
-}
-
-
-/*-------------------------- blog section ------------------------*/
-
-#blogs {
-    background: repeat 2;
-    background-size: 100%;
-}
-
-.card-img {
-    padding: 2% 2%;
-    object-fit: cover;
-}
-
-.heading {
-    font-weight: bolder;
-}
-
-.blog-card {
-    padding: 2% 2%;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.btn-blog {
-    width: 130px;
-    margin: 0 auto;
-    margin-top: -9%;
-    margin-bottom: 4%;
-}
-
-.query_btn {
-    margin-top: 22%;
-}
-
-.aces_btn {
-    margin-top: 5%;
-    margin-left: 33%;
-}
-
-.aces_img {
-    margin-top: 3%;
-}
-
-.aces_head {
-    margin-top: 4%;
-}
-
-.row_work_aces {
-    padding-left: 14%;
-}
-
-.mnist_btn {
-    margin-left: 34%;
-}
-
-.row_work_mnist {
-    padding-right: 14%;
-}
-
-.work-begin {
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-.btn_work {
-    margin-left: 29%;
-}
-
-
-/*--------------  footer csss ----------------*/
-
-
-/* Footer */
-
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-#footer {
-    padding: 15px 0;
-}
-
-#footer {
-    background: #8b2f97 !important;
-}
-
-#footer h5 {
-    padding-left: 10px;
-    border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-#footer a {
-    color: #ffffff;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-
-#footer ul.social li {
-    padding: 3px 0;
-}
-
-#footer ul.social li a i {
-    margin-right: 5px;
-    font-size: 25px;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
-    transition: .5s all ease;
-}
-
-#footer ul.social li:hover a i {
-    font-size: 30px;
-    margin-top: -10px;
-}
-
-#footer ul.social li a,
-#footer ul.quick-links li a {
-    color: #ffffff;
-}
-
-#footer ul.social li a:hover {
-    color: #eeeeee;
-}
-
-#footer ul.quick-links li {
-    padding: 3px 0;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
-    transition: .5s all ease;
-}
-
-#footer ul.quick-links li:hover {
-    padding: 3px 0;
-    margin-left: 5px;
-    font-weight: 700;
-}
-
-#footer ul.quick-links li a i {
-    margin-right: 5px;
-}
-
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
-}
-
-@media (max-width:767px) {
-    #footer h5 {
-        padding-left: 0;
-        border-left: transparent;
-        padding-bottom: 0px;
-        margin-bottom: 10px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .me-image {
-        padding-right: 5% !important;
-        margin-top: -2%;
-    }
-    .img-me {
-        filter: none;
-        padding: 5% 5%;
-    }
-    #aboutme {
-        margin-top: 2% !important;
-    }
-    .toggle_icon {
-        padding-top: 5% !important;
-    }
-    .icon {
-        width: 45px;
-        height: 45px;
-        padding-left: 1%;
-    }
-    .connect {
-        display: inline-flex;
-        align-items: center;
-        padding-left: 7%;
-    }
-    .aboutme-text {
-        font-size: 80%;
-    }
-    .about-me-container {
-        background-repeat: no-repeat;
-    }
-    .resume_btn {
-        margin-left: 25%;
-    }
-    #skills {
-        align-items: center;
-        object-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .skill-heading {
-        font-size: 80%;
-        text-align: center;
-        font-weight: 900;
-        padding-left: 1%;
-    }
-    .skill-icon {
-        width: 40px;
-        height: 40px;
-    }
-    #blogs {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .blog-card {
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-    .blog-individual {
-        padding-left: 12%;
-    }
-    .mnist_btn {
-        margin-left: 25%;
-    }
-    .row_work_aces {
-        margin-left: -16px;
-        padding-left: 0%;
-        padding-right: 10%;
-    }
-    .row_work_mnist {
-        padding-right: 5%;
-        margin-left: -30px;
-    }
-    .btn_work {
-        margin-left: 25%;
-    }
-    .aces_btn {
-        margin-left: 25%;
-    }
-    .work-p {
-        padding-bottom: 2%;
-    }
-    .work-begin {
-        padding-left: 10%;
-    }
-    .clg_img {
-        width: 320px;
-    }
-    .tsf {
-        font-size: 13px;
-    }
-}
-
-.clg_img {
-    margin-left: -4%;
-    height: 240px;
-}
-
-
-/*------------------------- timeline css --------------------------*/
-
-
-/* T he actual timeline (the vertical ruler) */
-
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-/* The actual timeline (the vertical ruler) */
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
-
-
-/* C    ontainer around content */
-
-.one_element {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-
-/* T he circles on the timeline */
-
-.one_element::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -13px;
-    background-color: white;
-    border: 4px solid #CF56A1;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-
-/* P  lace the container to the left */
-
-.left {
-    left: 0;
-}
-
-
-/* P  lace the container to the right */
-
-.right {
-    left: 50%;
-}
-
-
-/* A   dd arrows to the left container (pointing right) */
-
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-}
-
-
-/* Add arrows to the right container (pointing left) */
-
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-}
-
-
-/* F ix the circle for containers on the right side */
-
-.right::after {
-    left: -13px;
-}
-
-
-/* T  he actual content */
-
-.content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-}
-
-
-/* M    edia queries - Responsive timeline on screens less than 600px wide */
-
-@media screen and (max-width: 600px) {
-    /* P  lace the timelime to the left */
-    .timeline::after {
-        left: 31px;
-    }
-    /* F   ull-width containers */
-    .one_element {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-    /* M  ake sure that all arrows are pointing leftwards */
-    .one_element::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-    /* Make sure all circles are at the same spot */
-    .left::after,
-    .right::after {
-        left: 17px;
-    }
-    /* M    ake all right containers behave like the left ones */
-    .right {
-        left: 0%;
-    }
-}
-
-
-/* -    ------------------- Preloader ---------------------*/
-
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999;
-}
-
-#loader {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 5px solid transparent;
-    border-top-color: #561F55;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-#loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 5px solid transparent;
-    border-top-color: #8B2F97;
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
-}
-
-#loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 5px solid transparent;
-    border-top-color: #CF56A1;
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-
-}
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #d8b9c3;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        html,
+        body {
+            overflow-x: hidden;
+        }
+        /*-------------------------- navbar------------------------*/
+        
+        .navbar {
+            background-color: #561f55;
+        }
+        
+        .shift_nav {
+            margin-right: -12px;
+        }
+        
+        .navbar-toggler {
+            border-color: black;
+            background-color: white;
+        }
+        
+        .navbar-brand {
+            font-weight: bolder;
+            color: white;
+        }
+        
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0 10px;
+        }
+        
+        nav ul li a,
+        nav ul li a:after,
+        nav ul li a:before {
+            transition: all .5s;
+        }
+        
+        nav ul li a:hover {
+            color: white;
+        }
+        
+        nav.stroke ul li a,
+        nav.fill ul li a {
+            position: relative;
+        }
+        
+        nav.stroke ul li a:after,
+        nav.fill ul li a:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 0%;
+            content: '.';
+            color: transparent;
+            background: white;
+            height: 3px;
+        }
+        
+        nav.stroke ul li a:hover:after {
+            width: 100%;
+        }
+        
+        .navbar-toggler-icon {
+            border-color: darkblue;
+            padding-top: 10%;
+            align-content: center;
+        }
+        
+        .navbar-brand:hover {
+            color: white;
+            text-shadow: 2px 2px 4px white;
+        }
+        /*-------------------------- aboutme------------------------*/
+        
+        .heading {
+            font-family: 'Kanit', sans-serif;
+        }
+        
+        .card-horizontal {
+            display: flex;
+            flex: 1 1 auto;
+        }
+        
+        .card {
+            padding: 0 auto;
+        }
+        
+        .card-title {
+            text-align: center;
+        }
+        
+        .img-me {
+            height: auto;
+            max-width: 100%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 3%;
+            filter: grayscale(90%);
+        }
+        
+        .me-image {
+            box-shadow: 10px 10px 5px #ccc;
+        }
+        
+        .btn {
+            cursor: pointer;
+            border: 1px solid black;
+            background-color: transparent;
+        }
+        
+        .btn:hover {
+            background-color: black;
+            color: white;
+            text-shadow: 2px 2px 4px white;
+        }
+        
+        .resume_btn {
+            margin-left: 40%;
+            margin-top: 5%;
+        }
+        
+        .card-body {
+            margin-right: 2%;
+            text-align: justify;
+        }
+        
+        .container-fluid {
+            padding: 2% 5%;
+        }
+        
+        .connect {
+            display: inline-flex;
+            align-items: center;
+            padding-left: 15%;
+            margin-top: -6%;
+            padding-bottom: 2%;
+        }
+        
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .icon:hover {
+            transform: scale(1.1) rotate(360deg);
+        }
+        
+        #text {
+            display: inline-block;
+            color: #561f55;
+            font-family: 'Source Code Pro', monospace;
+            border-right: 3px solid #561f55;
+            font-size: large;
+        }
+        
+        #container-script {
+            text-align: center;
+            font-family: 'Source Code Pro', monospace;
+            font-size: large;
+        }
+        
+        .about-me-container {
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        .aboutme-card {
+            background-color: rgba(255, 255, 255, 0.7);
+            font-weight: bold;
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+        }
+        /*-------------------------- skills section------------------------*/
+        
+        #skills {
+            background-image: url('../images/woman_code.png');
+            object-position: center;
+            background-repeat: no-repeat;
+            background-position: top 360px left 180px;
+        }
+        
+        .skills-card {
+            align-items: center;
+            object-position: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .line {
+            display: inline-flex;
+            padding-bottom: 2%;
+            padding-top: 1%;
+        }
+        
+        .skill-heading {
+            text-align: center;
+            font-weight: 900;
+        }
+        
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .skill-icon:hover {
+            transform: scale(1.1) rotate(360deg);
+        }
+        /*----------------------  Achivement Section --------------------------*/
+        
+        .decor-table {
+            margin: 0 auto;
+        }
+        
+        #achivements {
+            background-image: url('../images/achivements.png');
+            background-repeat: no-repeat;
+            background-position: bottom 10px left 1000px;
+        }
+        /*-------------------------- blog section ------------------------*/
+        
+        #blogs {
+            background: repeat 2;
+            background-size: 100%;
+        }
+        
+        .card-img {
+            padding: 2% 2%;
+            object-fit: cover;
+        }
+        
+        .heading {
+            font-weight: bolder;
+        }
+        
+        .blog-card {
+            padding: 2% 2%;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .btn-blog {
+            width: 130px;
+            margin: 0 auto;
+            margin-top: -9%;
+            margin-bottom: 4%;
+        }
+        
+        .query_btn {
+            margin-top: 22%;
+        }
+        
+        .aces_btn {
+            margin-top: 5%;
+            margin-left: 33%;
+        }
+        
+        .aces_img {
+            margin-top: 3%;
+        }
+        
+        .aces_head {
+            margin-top: 4%;
+        }
+        
+        .row_work_aces {
+            padding-left: 14%;
+        }
+        
+        .mnist_btn {
+            margin-left: 34%;
+        }
+        
+        .row_work_mnist {
+            padding-right: 14%;
+        }
+        
+        .work-begin {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        
+        .btn_work {
+            margin-left: 29%;
+        }
+        /*--------------  footer csss ----------------*/
+        /* Footer */
+        
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        #footer {
+            padding: 15px 0;
+        }
+        
+        #footer {
+            background: #8b2f97 !important;
+        }
+        
+        #footer h5 {
+            padding-left: 10px;
+            border-left: 3px solid #eeeeee;
+            padding-bottom: 6px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        #footer a {
+            color: #ffffff;
+            text-decoration: none !important;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+        
+        #footer ul.social li {
+            padding: 3px 0;
+        }
+        
+        #footer ul.social li a i {
+            margin-right: 5px;
+            font-size: 25px;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
+        
+        #footer ul.social li:hover a i {
+            font-size: 30px;
+            margin-top: -10px;
+        }
+        
+        #footer ul.social li a,
+        #footer ul.quick-links li a {
+            color: #ffffff;
+        }
+        
+        #footer ul.social li a:hover {
+            color: #eeeeee;
+        }
+        
+        #footer ul.quick-links li {
+            padding: 3px 0;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
+        
+        #footer ul.quick-links li:hover {
+            padding: 3px 0;
+            margin-left: 5px;
+            font-weight: 700;
+        }
+        
+        #footer ul.quick-links li a i {
+            margin-right: 5px;
+        }
+        
+        #footer ul.quick-links li:hover a i {
+            font-weight: 700;
+        }
+        
+        @media (max-width:767px) {
+            #footer h5 {
+                padding-left: 0;
+                border-left: transparent;
+                padding-bottom: 0px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .me-image {
+                padding-right: 5% !important;
+                margin-top: -2%;
+            }
+            .img-me {
+                filter: none;
+                padding: 5% 5%;
+            }
+            #aboutme {
+                margin-top: 2% !important;
+            }
+            .toggle_icon {
+                padding-top: 5% !important;
+            }
+            .icon {
+                width: 45px;
+                height: 45px;
+                padding-left: 1%;
+            }
+            .connect {
+                display: inline-flex;
+                align-items: center;
+                padding-left: 7%;
+            }
+            .aboutme-text {
+                font-size: 80%;
+            }
+            .about-me-container {
+                background-repeat: no-repeat;
+            }
+            .resume_btn {
+                margin-left: 25%;
+            }
+            #skills {
+                align-items: center;
+                object-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .skill-heading {
+                font-size: 80%;
+                text-align: center;
+                font-weight: 900;
+                padding-left: 1%;
+            }
+            .skill-icon {
+                width: 40px;
+                height: 40px;
+            }
+            #blogs {
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .blog-card {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+            .blog-individual {
+                padding-left: 12%;
+            }
+            .mnist_btn {
+                margin-left: 25%;
+            }
+            .row_work_aces {
+                margin-left: -16px;
+                padding-left: 0%;
+                padding-right: 10%;
+            }
+            .row_work_mnist {
+                padding-right: 5%;
+                margin-left: -30px;
+            }
+            .btn_work {
+                margin-left: 25%;
+            }
+            .aces_btn {
+                margin-left: 25%;
+            }
+            .work-p {
+                padding-bottom: 2%;
+            }
+            .work-begin {
+                padding-left: 10%;
+            }
+            .clg_img {
+                width: 320px;
+            }
+            .tsf {
+                font-size: 13px;
+            }
+        }
+        
+        .clg_img {
+            margin-left: -4%;
+            height: 240px;
+        }
+        /*------------------------- timeline css --------------------------*/
+        /* T he actual timeline (the vertical ruler) */
+        
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* The actual timeline (the vertical ruler) */
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        /* C    ontainer around content */
+        
+        .one_element {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        /* T he circles on the timeline */
+        
+        .one_element::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -13px;
+            background-color: white;
+            border: 4px solid #CF56A1;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        /* P  lace the container to the left */
+        
+        .left {
+            left: 0;
+        }
+        /* P  lace the container to the right */
+        
+        .right {
+            left: 50%;
+        }
+        /* A   dd arrows to the left container (pointing right) */
+        
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        /* Add arrows to the right container (pointing left) */
+        
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        /* F ix the circle for containers on the right side */
+        
+        .right::after {
+            left: -13px;
+        }
+        /* T  he actual content */
+        
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+        /* M    edia queries - Responsive timeline on screens less than 600px wide */
+        
+        @media screen and (max-width: 600px) {
+            /* P  lace the timelime to the left */
+            .timeline::after {
+                left: 31px;
+            }
+            /* F   ull-width containers */
+            .one_element {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            /* M  ake sure that all arrows are pointing leftwards */
+            .one_element::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            /* Make sure all circles are at the same spot */
+            .left::after,
+            .right::after {
+                left: 17px;
+            }
+            /* M    ake all right containers behave like the left ones */
+            .right {
+                left: 0%;
+            }
+        }
+        /* -    ------------------- Preloader ---------------------*/
+        
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999999;
+        }
+        
+        #loader {
+            display: block;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border-radius: 50%;
+            border: 5px solid transparent;
+            border-top-color: #561F55;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+        
+        #loader:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 5px solid transparent;
+            border-top-color: #8B2F97;
+            -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+        }
+        
+        #loader:after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
+            border: 5px solid transparent;
+            border-top-color: #CF56A1;
+            -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
